@@ -10,4 +10,3 @@ variable "nexus_script" {
   }))
   default = []
 }
-
