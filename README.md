@@ -1,6 +1,6 @@
 # Nexus Script
 
-This module allows you to create **Nexus Script as a global resource** and **individual Nexus Script resources.** For individual examples, see the usage snippets and [examples](https://github.com/terraform-nexus-modules/terraform-nexus-script/tree/main/examples).
+This module allows you to create **Nexus Script as a global resource** and **individual Nexus Script resources.** For individual examples, see the usage snippets and [examples](https://github.com/devops-ia/terraform-nexus-script/tree/main/examples).
 
 ## Provider
 You need use a [Nexus provider](https://registry.terraform.io/providers/datadrivers/nexus/latest/docs).
@@ -18,9 +18,8 @@ provider "nexus" {
 
 ```hcl
 module "nexus_script" {
-  source  = "terraform-nexus-modules/script/nexus/"
-  version = "1.0.0"
-  
+  source  = "devops-ia/script/nexus/"
+
   nexus_script = [
     {
       name    = "create-repo-pypi-internal"
@@ -37,9 +36,8 @@ module "nexus_script" {
 
 ```hcl
 module "nexus_script" {
-  source  = "terraform-nexus-modules/script/nexus//modules/nexus-script"
-  version = "1.0.0"
-  
+  source  = "devops-ia/script/nexus//modules/nexus-script"
+
   name    = "create-repo-pypi-internal"
   type    = "groovy"
   content = "repository.createPyPiHosted('pypi-internal')"
@@ -83,8 +81,8 @@ No resources.
 
 ## Authors
 
-Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/terraform-nexus-modules/terraform-nexus-script/graphs/contributors).
+Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/devops-ia/terraform-nexus-script/graphs/contributors).
 
 ## License
 
-Apache 2 Licensed. See [LICENSE](https://github.com/terraform-nexus-modules/terraform-nexus-script/blob/main/LICENSE) for full details.
+Apache 2 Licensed. See [LICENSE](https://github.com/devops-ia/terraform-nexus-script/blob/main/LICENSE) for full details.
