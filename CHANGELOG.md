@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/nexus-module/terraform-nexus-script/compare/v1.1.0...v1.2.0) (2026-08-22)
+
+
+### Features
+
+* bump nexus provider to 3.0.0 ([#18](https://github.com/nexus-module/terraform-nexus-script/issues/18)) ([c8f0155](https://github.com/nexus-module/terraform-nexus-script/commit/c8f01554ae78521d0257fdba0ec73d1817903bcf))
+
 ## [1.1.0](https://github.com/devops-ia/terraform-nexus-script/compare/v1.0.0...v1.1.0) (2024-08-07)
 
 
